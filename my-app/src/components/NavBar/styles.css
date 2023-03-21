@@ -1,0 +1,203 @@
+:root{
+    --color1: Black;
+    --color2:white;
+    --color3:pink;
+}
+
+@font-face {
+    font-family: logoFont;
+    src: url('../../assets/logoFont2.OTF');
+}
+@font-face {
+    font-family: themeFont;
+    src: url('../../assets/themeFont.otf');
+}
+@font-face {
+    font-family: bodyFont;
+    src: url('../../assets/PoiretOne-Regular.ttf');
+}
+
+/* NAVBAR STYLES */
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: transparent;
+    /* Code Below keeps Navbar at top of the sceen at all times */
+   position: fixed;
+   width: 100%;
+   top: 0;
+   z-index: 3;
+}
+.menu-bars{
+    font-size: 1.5rem;
+    background: none;
+    color:var(--color1); 
+    transition: ease-in-out 3ms;    
+}
+.menu-bars:hover{
+    color: var(--color3);
+}
+.brandLogo{
+  color: black;
+  font-size: 2.5rem;
+    text-decoration: none;
+    font-family: 'logoFont';
+    transition: ease-in-out 1s;
+}
+.brandLogo:hover{
+    color: pink;
+}
+.faCart{
+    color: var(--color1);
+    transition: ease-in-out 5ms;  
+}
+.faCart svg{
+    fill: var(--color1) !important;
+}
+.faCart:hover{
+    color: var(--color1) !important;
+}
+
+/* SIDEBAR STYLES */
+.navBarH1{
+    font-family: 'logoFont';
+    color: var(--color2);
+    margin:10px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    animation: colorChange 5s infinite;
+}
+@keyframes colorChange {
+    from {color: var(--color1);}
+    to {color: var(--color2);}
+  }
+.navBarH5{
+    color: var(--color2);
+    margin:10px;
+    margin-left: 30px;
+    text-align: left; 
+    font-size: 15px;
+}
+.navBarP{
+    color: var(--color3);
+    font-size: 12px;
+    font-family: 'bodyFont';
+    text-align: center;
+justify-self: center;
+padding: 10px;
+}
+.navBarP a{
+    color: var(--color3);
+text-decoration: none;
+}
+.navBarP a:hover{
+    color: var(--color3);
+text-decoration: underline;
+}
+.nav-menu-items{
+    width: 100%;
+    padding-left: 30px;
+    /* margin-top: -100px; */
+    }
+ 
+.nav-menu{
+    background-color: rgba(24,24,24,.7);
+    backdrop-filter: blur(25px);
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+    width: 30vw;
+    height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content:space-between;
+   position: fixed;
+   top:0;
+   left: -100%; 
+   transition: 850ms;
+   z-index: 7;
+   font-family:'themeFont';
+}
+
+.nav-menu.active {
+    left: 0;
+    transition: 350ms;
+}
+
+.nav-text{
+  list-style: none;
+ 
+}
+
+.nav-text a{
+    text-decoration: none;
+    color: var(--color2);
+    font-size: 18px;
+   text-align: left;
+   transition: all ease-in-out 0.5s;
+}
+.nav-text div{
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+.nav-text a:hover{
+   font-size: 16px;
+   color:var(--color1);
+}    
+
+.navbar-toggle{
+    text-align: right;
+    list-style: none;
+    margin-right: 10px;
+    margin-top: 5px;
+   
+}
+
+.brandName{
+    color: var(--color2);
+    font-size: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    margin-top: 30px;
+  
+}
+.brandName a{
+    color: var(--color2);
+    text-decoration: none;
+    font-size: 10px;
+    padding-left: 5px;
+}
+.brandName a:hover{
+    text-decoration: underline;
+    font-size: 11px;
+    color:var(--color1);
+}
+.lineBreak{
+    list-style: none;
+    color: var(--color2);
+    width: 3rem;
+}
+.navFootnote{
+    color: white;
+    text-align: center;
+    width: 90%;
+    color: var(--color2);
+    font-size: 9px;
+    font-family: 'bodyFont';
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .nav-menu{
+        width: 50vw;
+    }
+    .hamburgerMenuImg{
+        width: 75px;
+    }
+    .brandLogo{
+        font-size: 2rem;
+    }
+
+}

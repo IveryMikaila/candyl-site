@@ -1,0 +1,141 @@
+:root{
+    --color1: Black;
+    --color2:white;
+    --color3:pink;
+}
+
+@font-face {
+    font-family: logoFont;
+    src: url('../../assets/logoFont2.OTF');
+}
+@font-face {
+    font-family: themeFont;
+    src: url('../../assets/themeFont.otf');
+}
+@font-face {
+    font-family: bodyFont;
+    src: url('../../assets/PoiretOne-Regular.ttf');
+}
+.homePage{
+margin-top: 70px;
+overflow-x: hidden;
+}
+/* Homepage Main Section/ Banner */
+.topSection{
+  height: 75vh;
+ text-align: center;
+ margin-top: 150px;
+}
+.homeBanner{
+    display: flex;
+    justify-content: flex-start;
+    animation: banner 20s linear infinite;
+    margin-bottom: 250px;
+}
+.homeBanner li{
+    padding: 0 2rem;
+    font-size: 6rem;
+    font-family: 'themeFont';
+    white-space: nowrap;
+    list-style: none;
+    position: relative;
+  z-index: 1;
+}
+.normalHeading{
+    opacity: 0.5;
+    margin-left: 50px;
+}
+.topSection h1{
+    font-family: 'themeFont';
+}
+.candy{
+border-bottom: 1px solid black;
+}
+.topSection p{
+   font-family: 'bodyFont';
+   font-size: 1rem;
+    }
+    .topSection p a{
+       text-decoration: none;
+       color: black;
+       transition: all ease-in-out 0.5s;
+         }
+         .topSection p a:hover{
+            font-size: 1.1rem;
+              }
+@keyframes banner{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+/* Cursor Styles */
+.liImg {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+    z-index: -10;
+    opacity: 0;
+    visibily: hidden;
+    pointer-events: none;
+  }
+  
+  
+/* Newsletter Styles */
+.newsletterSection{
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-right-radius: 50% ;
+    border-top-left-radius: 131% ;
+    background-image: linear-gradient(45deg, #ee9ca7 0%, #ffdde1 100%);
+}
+
+.newsletterSection h2{
+    font-family: 'themeFont';
+    text-align: center;
+}
+.newsletterSection p{
+    text-align: center;
+    font-family: 'bodyFont';
+}
+.homeInput{
+   width: 271px;
+   font-family: 'bodyFont';
+   border: none;
+   border-bottom: 1px solid black;
+   background-color: transparent;
+}
+.homeSubmit{
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    margin: 10px;
+    margin-left: 0;
+    font-family: 'themeFont';
+}
+@media screen and (max-width: 767px) {
+    .newsletterSection{
+        padding-top: 100px;
+        padding-left: 100px;
+        text-align: center;
+    }
+    .homeSubmit{
+        margin-top: 30px;
+    }
+   
+}
+@media screen and (max-width: 502px) {
+   
+    .homeSubmit{
+        border: 1px solid black;
+    }
+   
+}

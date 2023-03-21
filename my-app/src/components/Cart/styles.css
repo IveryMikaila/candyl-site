@@ -1,0 +1,107 @@
+:root{
+    --color1: Black;
+    --color2:white;
+    --color3:pink;
+}
+
+@font-face {
+    font-family: logoFont;
+    src: url('../../assets/logoFont2.OTF');
+}
+@font-face {
+    font-family: themeFont;
+    src: url('../../assets/themeFont.otf');
+}
+@font-face {
+    font-family: bodyFont;
+    src: url('../../assets/PoiretOne-Regular.ttf');
+}
+
+
+.cartContainer{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-family: 'bodyFont';
+    display: flex;
+    flex-direction: column;
+align-items: center;
+}
+.cartColumn{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.cartButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.cartButtons button{
+margin: 10px;
+margin-bottom: 0;
+margin-top: 0;
+background:transparent;
+border: 1px solid var(--color1);
+transition: all ease-in-out 0.5s;
+}
+.cartButtons button:hover{
+    background-color: var(--color1);
+    color: white;
+}
+.cartDteails{
+    margin-top: 20px;
+}
+.filledCartBtns button{
+    margin: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+    background:transparent;
+    border: 1px solid var(--color1);
+    transition: all ease-in-out 0.5s;
+}
+.filledCartBtns button:hover{
+    background-color: var(--color1);
+    color: white;
+}
+.emptyCart{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; 
+margin-top: 20%;
+}
+.emptyCart a{
+    text-decoration: none;
+    color: var(--color3);
+}
+.emptyCart a:hover{
+    color: var(--color1);
+}
+.loadingScreen{
+    font-family: 'themeFont';
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.checkoutBtn a{
+    text-decoration: none;
+    color: var(--color1);
+}
+.checkoutBtn a:hover{
+    color:var(--color2);
+}
+.cartSpinner{
+    margin-top:20%;
+}
+@media screen and (max-width: 767px) {
+
+    .cartSpinner{
+        margin-top:50%;
+    }
+}

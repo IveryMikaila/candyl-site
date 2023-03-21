@@ -1,0 +1,67 @@
+:root{
+    --color1: Black;
+    --color2:white;
+    --color3:pink;
+}
+
+@font-face {
+    font-family: logoFont;
+    src: url('../../../assets/logoFont2.OTF');
+}
+@font-face {
+    font-family: themeFont;
+    src: url('../../../assets/themeFont.otf');
+}
+@font-face {
+    font-family: bodyFont;
+    src: url('../../../assets/PoiretOne-Regular.ttf');
+}
+
+.backToHomeBtn{
+    margin-top: 70px;
+    background:transparent;
+    color: var(--color1);
+    border: 1px solid var(--color1);
+    transition: all ease-in-out 0.5s;
+    font-family: 'themeFont';
+    padding: 5px;
+    text-decoration: none;
+}
+.backToHomeBtnContainer{
+    margin-top: 30px;
+}
+.backToHomeBtn:hover{
+    background-color: var(--color1);
+    color: white;
+}
+.checkoutPaper{
+    margin-top: 90px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+.checkoutSection{
+    padding: 30px;
+}
+.checkoutHeading{
+    font-family: 'themeFont' !important;   
+}
+.backToCartBtn{
+    text-decoration: none;
+    color: black;
+}
+.backToCartBtn:hover{
+    text-decoration: none;
+    color: black;
+}
+.checkoutConfirmation{
+    text-align: center;
+    font-family: 'bodyFont'!important;
+}
+@media screen and (max-width: 767px) {
+ 
+    .checkoutPaper{
+        margin-top: 90px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+}

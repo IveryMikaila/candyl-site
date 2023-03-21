@@ -1,0 +1,72 @@
+:root{
+    --color1: Black;
+    --color2:white;
+    --color3:pink;
+}
+
+@font-face {
+    font-family: logoFont;
+    src: url('../../assets/logoFont2.OTF');
+}
+@font-face {
+    font-family: themeFont;
+    src: url('../../assets/themeFont.otf');
+}
+
+
+.footer{
+    background: transparent;
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid black;
+    margin-top: auto;
+    justify-content: space-between;
+}
+.footer a:hover{
+text-decoration: underline;
+color: var(--color1);
+}
+
+.footerLinks{
+    display: flex;
+    flex-direction: row;
+}
+.footerLinks a{
+    color: var(--color1);
+    font-family: 'themeFont';
+    font-size: 12px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.footer p{
+    white-space: normal;
+}
+.socialLinks{
+    font-size: 1.2rem;
+   white-space: nowrap;
+   display: flex;
+   flex-direction: row;
+}
+.copyright{
+    font-size: 10px;
+}
+.copyright a{
+    color: var(--color1);
+    text-decoration: none;
+}
+@media screen and (max-width: 767px) {
+    .copyright{
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+   
+    .footerLinks{
+        display: flex;
+        flex-direction: column;
+    }
+    .socialLinks{
+       display: flex;
+       flex-direction: column;
+    }
+}
