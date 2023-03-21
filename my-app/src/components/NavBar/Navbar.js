@@ -75,7 +75,7 @@ candyl</Link>
 </ul>
 </div>
 {/* Footnote */}
-<h6 className='navFootnote'>@2023 Copyright I don't own the images or logos used in this project. Website coded by Mikaila Ivery with ♡ using Commerce js api and React js.</h6>
+<h6 className='navFootnote'>@2023 Copyright I don't own the images or fonts used in this project. Website coded by Mikaila Ivery with ♡ using Commerce js api and React js.</h6>
 
 </nav>
   </>

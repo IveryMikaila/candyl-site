@@ -14,7 +14,7 @@ const Footer = () => {
 </div>
 </div>  
 <p className='copyright'>
-@2023 Copyright I don't own the images or logos used in this project. Images used for learning purposes only.  Shop the actual Candier®
+@2023 Copyright I don't own the images or fonts used in this project. This site will not be used for commercial purposes.  Shop the actual Candier®
 <Link to={'https://www.shopryanporter.com/?gclid=CjwKCAiAr4GgBhBFEiwAgwORrf7gIKDSiJuYg4bUb8jXEZbRn9vHT-TRGHyTYW926ILibKQXQxCGNBoCUfMQAvD_BwE'} target='_blank'>
 here
 </Link>
