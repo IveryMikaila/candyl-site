@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a5f27a75.css",
+    "main.js": "/static/js/main.bab2d00d.js",
+    "static/media/candle4.png": "/static/media/candle4.581b5bc96be255751b3b.png",
+    "static/media/candle2.png": "/static/media/candle2.75559e838308d77d4fb4.png",
+    "static/media/candle3.png": "/static/media/candle3.a1a7a56d3176c6600fba.png",
+    "static/media/candle1.png": "/static/media/candle1.3efbefbfb7bfa98b9f29.png",
+    "static/media/logoFont2.OTF": "/static/media/logoFont2.76779e4a3c08303043bf.OTF",
+    "static/media/themeFont.otf": "/static/media/themeFont.6a5ff38cb33a8d6f7f23.otf",
+    "static/media/PoiretOne-Regular.ttf": "/static/media/PoiretOne-Regular.9bf109e97f6294c6fe2b.ttf",
+    "static/media/menuBar.png": "/static/media/menuBar.e3832599b1c259641c6f.png",
+    "index.html": "/index.html",
+    "main.a5f27a75.css.map": "/static/css/main.a5f27a75.css.map",
+    "main.bab2d00d.js.map": "/static/js/main.bab2d00d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a5f27a75.css",
+    "static/js/main.bab2d00d.js"
+  ]
+}
